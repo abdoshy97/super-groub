@@ -1,0 +1,21 @@
+.contenar{
+display: grid;
+grid-template-columns:repeat(4,1fr) ;
+grid-template-rows: repeat(5,200px) ;
+grid-gap: 5px;
+}
+
+.box{
+    background-color: tomato;
+    text-align: center;
+ 
+}
+
+@media (max-width: 800px) {
+    .contenar{
+        display: grid;
+        grid-template-columns:repeat(2,1fr) ;
+        grid-template-rows: repeat(5,100px) ;
+        grid-gap: 5px;
+        }
+}
